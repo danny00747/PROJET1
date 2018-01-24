@@ -1,0 +1,303 @@
+Q|Qui sont les agents économiques ? :
+A|Tout individu (ou groupe d'individus) qui fait des choix|V
+A|Uniquement les patrons d'entreprise|X
+A|Uniquement les travailleurs|X
+A|Les femmes|X
+A|Les hommes|X
+
+Q|Le capital d'une entreprise est représenté par :
+A|Son argent|X
+A|Le terrain|X
+A|Les travailleurs|X
+A|Les connaissances des travailleurs|X
+A|Toutes les réponses à la fois|V
+
+Q|C'est quoi l'input ? :
+A|Le capital de l'entreprise|X
+A|Les matières premières à disposition de l'entreprise|V
+A|Le capital + les matières premières|X
+
+Q|A quoi sert la science économique ?:
+A|Comprendre comment les individus optimisent leurs ressources|V
+A|A enrichir la population.|X
+A|A donner du travail aux économistes|X
+
+Q|Que signifie "La science économique est positive et normative" ?:
+A|Elle constate des problèmes|X
+A|Elle trouve des solutions aux problèmes|X
+A|Elle constate des problèmes et trouvent des solutions à ceux-ci|V
+
+Q|C'est quoi la microéconomie ?
+A|Etudie la consommation d'un individu|V
+A|Etudie la consommation de tous les individus|X
+A|L'économie étudiée avec un microscope|X
+
+Q|C'est quoi la macroéconomie ?
+A|Etudier la consommation d'un individus|X
+A|Etudier la consommation de tous les individus|V
+
+Q|Lequel de ces principes n'est pas un principe de l'économie ?:
+A|Optimisation de l'utilisation des ressources|X
+A|Optimisation de la productivité|X
+A|Equilibre de l'offre et de la demande|X
+A|Empirisme (prouver par des faits)|X
+A|Augmenter l'importance de la monnaie|V
+
+Q|C'est quoi le cout d'opportunité ?:
+A|Ce à quoi on renonce pour faire quelque chose|V
+A|Ce que l'on est prêt à payer pour un bien|X
+A|Le prix de vente d'un bien|X
+A|Le prix idéal d'un bien|X
+
+Q|C'est quoi le "passager clandestin" ?:
+A|Une personne n'ayant pas tendance à payer|V
+A|Une personne qui est là où elle ne devrait pas|X
+A|Une personne ayant tendance à payerX
+
+Q|Le dilemne du prisonnier (selon la théorie des jeux) :
+A|Les 2 prisonniers vont avoir tendance à nier|X
+A|Les 2 prisonniers vont avoir tendance à avouer|V
+A|Un des 2 va nier et l'autre avouer|X
+
+Q|C'est quoi la stratégie ?:
+A|Un plan de toutes nos actions en tenant compte de celles des autres|V
+A|L'action la plus avantageuse|X
+A|Un plan de toutes nos actions sans tenir compte de celles des autres|X
+
+Q|C'est quoi la stratégie dominante ?:
+A|L'action la plus avantageuse|X
+A|L'action la plus avantageuse peu importe les actions des autres|V
+A|Le plan de toutes nos actions ayant un résultat bénéfique|X
+
+Q|Dans la théorie des jeux, quel est l'équilibre le + stable :
+A|Equilibre de Nash|V
+A|Equilibre coopératif|X
+
+Q|Peut-on modifier l'équilibre de Nash ?:
+A|Oui|V
+A|Non|X
+
+Q|Comment peut-on modifier l'équilibre de Nash ?:
+A|On ne peut pas|X
+A|Avec des incitatifs|V
+A|En laissant faireles choses|X
+
+Q|Faut-il tout laisser à la loi du marché ?:
+A|Non|V
+A|Oui|X
+
+Q|L'Etat est-il important dans la gestion des biens publics ?:
+A|oui|V
+A|non|X
+
+Q|Pourquoi l'Etat est indispensable pour la gestion des biens publics ?:
+A|A cause du passager clandestin|V
+A|Car l'Etat a beaucoup d'argent|X
+A|Car les biens publics, ça sert à rien !|X
+
+Q|C'est quoi la disposition à payer ?:
+A|Ce à quoi on renonce pour faire quelque chose|X
+A|Le prix que l'on est prêt à payer pour qqch|V
+A|Le prix auquel les entreprises sont prêtes à vendre leurs produits|X
+
+Q|L'equilibre coopératif est-il possible sans incitatif :
+A|Oui|V
+A|L'équilibre coopératif n'existe pas|X
+A|Pas sans incitatif|X
+
+Q|Si les prix montent :
+A|L'offre va monter|V
+A|La demande va monter|X
+A|L'offre et la demande vont monter|X
+A|L'offre et la demande vont baisser|X
+
+Q|Si les prix diminuent : 
+A|L'offre va monter|X
+A|La demande va monter|V
+A|L'offre et la demande vont baisser|X
+A|L'offre et la demande vont monter|X
+
+Q|Dans la concurrence parfaite il faut :
+A|Beaucoup d'entreprises|X
+A|Beaucoup de consommateurs|X
+A|Beaucoup d'entreprises ET de consommateurs|V
+A|Peu d'entreprises ET peu de consommateurs|X
+
+Q|C'est quoi les marchés virtuels :
+A|Cela n'existe pas|X
+A|Les lieux d'échange entre vendeurs et consommateurs en ligne|V
+A|Uniquement la bourse|X
+A|Uniquement les sites de vente en ligne (2ème main, Ebay)|X
+
+Q|Existe-t-il des marchés sans monnaie ? :
+A|Oui|V
+A|Non|X
+A|Plus de nos jours|X
+
+Q|En concurrence parfaite, laquelle de ces hypothèses est fausse ? :
+A|Beaucoup de petits producteurs|X
+A|Beaucoup de consommateurs|X
+A|Information parfaite|X
+A|Un consommateur ne peut pas devenir un producteur|V
+A|Un consommateur peut devenir producteur comme il veut|X
+
+Q|Qu'est-ce qu'un monopsone ? :
+A|Un ou très peu de consommateur sur le marché|V
+A|Une ou très peu d'entreprises sur le marché|X
+A|Ce terme n'existe pas|X
+A|La même chose que le monopole|X
+
+Q|Qu'est-ce qu'une situation de monopole ? :
+A|Un ou très peu de consommateur sur le marché|X
+A|Une ou très peu d'entreprises sur le marché|V
+A|Ce terme n'existe pas|X
+A|La même chose que le monopsone|X
+
+Q|Qu'est-ce que le cout marginal ? :
+A|De combien ma satisfaction va monter si j'achète une unité supplémentaire|X
+A|De combien le cout va monter pour la production d'une unité supplémentaire|V
+A|Recette marginale - cout marginal|X
+A|Le prix de vente d'une unité supplémentaire|X
+
+Q|Qu'est-ce que l'utilité marginale ? :
+A|De combien ma satisfaction va monter si j'achète une unité supplémentaire|V
+A|De combien le cout va monter pour la production d'une unité supplémentaire|X
+A|Recette marginale - cout marginal|X
+A|Le prix de vente d'une unité supplémentaire|X
+
+
+Q|Qu'est ce que le profit marginal ? :
+A|De combien ma satisfaction va monter si j'achète une unité supplémentaire|X
+A|De combien le cout va monter pour la production d'une unité supplémentaire|X
+A|Recette marginale - cout marginal|V
+A|Le prix de vente d'une unité supplémentaire|X
+
+Q|Qu'est-ce que la recette marginale ? :
+A|De combien ma satisfaction va monter si j'achète une unité supplémentaire|X
+A|De combien le cout va monter pour la production d'une unité supplémentaire|X
+A|Recette marginale - cout marginal|X
+A|Le prix de vente d'une unité supplémentaire|V
+
+Q|Le cout marginal peut-il être décroissant ? :
+A|Oui|V
+A|Non|X
+
+Q|Quand le cout marginal est-il décroissant ? :
+A|En période d'apprentissage|V
+A|En début de travail, quand la productivité est maximale|X
+A|En fin de journée, quand la productivité est minimale|X
+A|Jamais, il est toujours croissant|X
+
+Q|Pourquoi le cout marginal est-il croissant ? :
+A|A cause de la productivité qui baisse|V
+A|A cause de la baisse de ressources|V
+A|Il est toujours décroissant|X
+A|Il est toujours constant|X
+A|A cause de l'apprentissage|X
+
+Q|Cout fixe = cout marginal ? :
+A|Oui|X
+A|Non|V
+
+Q|Au fil d'une journée de travail, le cout d'opportunité est :
+A|Croissant, à cause de la fatigue (par exemple)|V
+A|Décroissant, à cause de la fatigue (par exemple)|X
+A|Constant|X
+A|Aucune de ces réponses|X
+
+Q|En concurrence parfaite, une situation de monopole est-elle possible ? :
+A|oui|X
+A|Non|V
+
+Q|En concurrence parfaite, une situation de monopsone est-elle possible ? :
+A|Oui|X
+A|Non|V
+
+Q|En concurrence parfaite, une entreprise peut-elle changer le prix du marché ? :
+A|Oui|X
+A|Non|V
+
+Q|En concurrence parfaite, un cartel peut-il changer le prix du marché ? :
+A|Oui|X
+A|Non|V
+
+Q|Les cartels sont ils légaux (en général) ? :
+A|Oui|X
+A|Non|V
+
+Q|C'est quoi le "surplus du consommateur" ? :
+A|Utilité marginale|X
+A|La disposition à payer|X
+A|Le prix du marché|X
+A|Le bénéfice entre la disposition à payer et le prix du marché|V
+
+Q|Le but du consommateur est : 
+A|Acheter au + bas pris possible|V
+A|Acheter au + haut prix possible|X
+A|Vendre au + bas pris possible|X
+A|Vendre au + haut prix possible|X
+
+Q|Le but du vendeur est : 
+A|Acheter au + bas pris possible|X
+A|Acheter au + haut prix possible|X
+A|Vendre au + bas pris possible|X
+A|Vendre au + haut prix possible|V
+
+Q|Le marché est : 
+A|Le lieu de rencontre entre vendeurs et consommateurs|V
+A|Le prix fixé par la rencontre des vendeurs et des consommateurs|X
+A|Le prix fixé par les consommateurs|X
+A|Le prix fixé par les vendeurs|X
+
+Q|Lequel de ces choix ne fait PAS varier la demande d'un bien : 
+A|Le changeme5nt de prix d'un bien substitut|X
+A|Une annonce positive/négative sur le bien|X
+A|Les revenus des individus|X
+A|Le changement du prix du marché|X
+A|Le changement du prix d'un bien complémentaire|X
+A|Aucune de ces réponses|V
+
+Q|Lequel de ces choix ne fait PAS varier l'offre d'un bien :
+A|Le changement du prix du marché|X
+A|La hausse/baisse du cout de production|X
+A|La hausse/baisse du prix des input|X
+A|L'augmentation du capital de l'entreprise|X
+A|Aucune de ces réponses|V
+
+Q|C'est quoi le "surplus du producteur" ? 
+A|Le gain fait entre le profit marginal et le cout marginal|V
+A|Lest stocks produits par le producteur suite à une offre excédentaire|X
+A|Lorsque le profit marginal est négatif|X
+A|Lorsque le profit marginal est positif|X
+
+Q|Le prix d'équilibre est-il toujours atteint dans tous les marchés ? :
+A|Non|V
+A|Oui|X
+
+Q|Les zones de refus et de frustrations existent pour les consommateurs.
+A|Vrai|V
+A|Faux|X
+
+Q|Les zones de refus et de frustrations existent pour les producteurs.
+A|Vrai|V
+A|Faux|X
+
+Q|Une élasticité positive symbolise : 
+A|L'élasticité de l'offre|V
+A|L'élasticité de la demande|X
+A|Une grande élasticité|X
+A|Une faible élasticité|X
+
+Q|Une élasticité négative symbolise : 
+A|L'élasticité de l'offre|V
+A|L'élasticité de la demande|X
+A|Une grande élasticité|X
+A|Une faible élasticité|X
+
+Q|Pour la demande, en valeur absolue, une forte élasticité est :
+A|Supérieure à 1|V
+A|Inférieure à 1|X
+
+Q|Pour l'offre, une forte élasticité est :
+A|Supérieure à 1|X
+A|Inférieure à 1|V
