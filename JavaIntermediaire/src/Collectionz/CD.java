@@ -26,6 +26,8 @@ public class CD implements Comparable<CD> {
 
 	public Double getPrix() {
 		return prix;
+		
+		
 	}
 
 	@Override

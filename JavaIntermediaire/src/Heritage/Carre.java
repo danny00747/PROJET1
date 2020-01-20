@@ -1,6 +1,7 @@
 package Heritage;
 
 public class Carre extends Forme {
+	
 	private int cote;
 
 	public Carre(int cote) {

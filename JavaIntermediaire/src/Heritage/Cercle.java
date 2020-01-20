@@ -1,6 +1,7 @@
 package Heritage;
 
 public class Cercle extends Forme {
+	
 	private int rayon;
 
 	public Cercle(int rayon) {

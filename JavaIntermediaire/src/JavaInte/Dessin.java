@@ -3,6 +3,7 @@ package JavaInte;
 import java.util.Scanner;
 
 public class Dessin {
+	
 	 public static void main (String [] args) {
 	        boolean avec = true;
 	        Fenetre fenetre = new Fenetre();

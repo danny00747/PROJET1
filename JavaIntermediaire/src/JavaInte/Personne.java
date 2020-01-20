@@ -1,7 +1,9 @@
 package JavaInte;
 
-public class Personne {
-	public static String nom;
+import java.util.Comparator;
+
+public class Personne implements Comparator<Personne>{
+	public String nom;
 	private String prenom;
 	private String middle;
 	private int age;
@@ -19,6 +21,7 @@ public class Personne {
 		this.prenom = prenom;
 		this.setMiddle(middle);
 		nombresDesPersonnes++;
+		System.err.println("SUPERRRRR");
 
 	}
 
@@ -113,6 +116,11 @@ public class Personne {
 			System.out.println("nested classes");
 		}
 
+	}
+
+	@Override
+	public int compare(Personne o1, Personne o2) {
+		return o1.getNom().compareTo(o2.getNom());
 	}
 
 }

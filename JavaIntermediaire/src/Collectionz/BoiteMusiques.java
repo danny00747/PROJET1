@@ -7,16 +7,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class BoiteMusiques {
-	
+
 	public String[] tab;
 
-	private ArrayList<Music> musique = new ArrayList<Music>();
-	
-	
-
-	
-
-
+	private ArrayList<Music> musique = new ArrayList<>();
 
 	public void initialiser() {
 		charge();

@@ -10,7 +10,7 @@ import java.io.IOException;
 public class BufferReaders {
 	public static void main(String[] args) {
 
-		File file = new File("C:\\Users\\morga\\Documents\\LEARN-JAVA\\JavaIntermediaire\\src\\Files\\barca.text");
+		File file = new File("C:\\Users\\morga\\Documents\\LEARN-JAVA\\JavaIntermediaire\\src\\Files\\barfca.text");
 
 		try (BufferedReader bf = new BufferedReader(new FileReader(file))) {
 			String line;
@@ -18,11 +18,12 @@ public class BufferReaders {
 			while ((line = bf.readLine()) != null) {
 				count++;
 				System.out.println(line);
+				System.out.println(count);
 			}
 			System.out.println(count);
 
 		} catch (FileNotFoundException e) {
-			System.err.println("Can't read the file " + e.getMessage());
+			System.err.println("Can't read the file :" + "\n" + e.getMessage());
 		} catch (IOException e) {
 			System.out.println("cant");
 		}

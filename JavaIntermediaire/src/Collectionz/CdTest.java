@@ -8,6 +8,7 @@ public class CdTest {
 	public static void main(String[] args) {
 
 		ArrayList<CD> list = new ArrayList<CD>();
+		ArrayList<Integer> lists = new ArrayList<>();
 
 		CD cd = new CD("Emi", "Not afr", 11);
 
@@ -17,7 +18,7 @@ public class CdTest {
 		list.add(new CD("Drake", "Hotline", 12));
 		list.add(new CD("Timbland", "Apologize", 73));
 		list.add(new CD("Florida", "My house", 125));
-		list.add(cd);
+		lists.add(new Integer(23));
 	
 
 		System.err.println("Avant le tri : " + "\n");

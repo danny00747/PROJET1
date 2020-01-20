@@ -8,36 +8,36 @@ public class ReverseFileScanner {
 	
 	public static void main(String[] args) {
 
-		Scanner data; // Character input stream for reading data.
-		PrintWriter result; // Character output stream for writing data.
+		Scanner data; 
+		PrintWriter result; 
 
-		ArrayList<Double> numbers; // An ArrayList for holding the data.
+		ArrayList<Double> numbers; 
 
 		numbers = new ArrayList<Double>();
 
-		try { // Create the input stream.
+		try { 
 			data = new Scanner(new File("C:\\Users\\morga\\Documents\\LEARN-JAVA\\JavaIntermediaire\\src\\Files\\data.text"));
 		} catch (FileNotFoundException e) {
 			System.out.println(System.getProperty("C:\\\\Users\\\\morga\\\\Documents\\\\LEARN-JAVA\\\\JavaIntermediaire\\\\src\\\\Files\\\\data.text"));
 			System.out.println("Can't find a file named data.text!");
-			return; // End the program by returning from main().
+			return; 
 		}
 
-		try { // Create the output stream.
+		try { 
 			result = new PrintWriter(new FileWriter("C:\\Users\\morga\\Documents\\LEARN-JAVA\\JavaIntermediaire\\src\\Files\\result.text"));
 		} catch (IOException e) {
 			System.out.println("Can't open file result.text!");
 			System.out.println("Error: " + e);
-			data.close(); // Close the input file.
-			return; // End the program.
+			data.close(); 
+			return; 
 		}
 
-		while (data.hasNextDouble()) { // Read until end-of-file.
+		while (data.hasNextDouble()) { 
 			double inputNumber = data.nextDouble();
 			numbers.add(inputNumber);
 		}
 
-		// Output the numbers in reverse order.
+		
 
 		for (int i = numbers.size() - 1; i >= 0; i--)
 			result.println(numbers.get(i));
@@ -47,6 +47,6 @@ public class ReverseFileScanner {
 		data.close();
 		result.close();
 
-	} // end of main()
+	} 
 
-}// end class ReverseFileWithScanne
+}

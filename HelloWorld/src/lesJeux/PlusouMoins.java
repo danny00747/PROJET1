@@ -12,7 +12,7 @@ public class PlusouMoins {
 		int secret_number = new Random().nextInt(999) + 1;
 		do {
 			System.out.print("Entre un chiffre en 1-1000 :");
-			user_number = scanner.nextInt();
+			user_number = scanner.nextInt(); 
 			if (user_number == secret_number) {
 				System.out.println("Felicitations !");
 			} else if (user_number > secret_number) {

@@ -9,7 +9,7 @@ public class BufferWriters {
 
 	public static void main(String[] args) {
 
-		write("C:\\Users\\morga\\Documents\\LEARN-JAVA\\JavaIntermediaire\\src\\Files\\barca2.text", 5);
+		write("C:\\Users\\morga\\Documents\\LEARN-JAVA\\JavaIntermediaire\\src\\Files\\barca5.text", 5);
 	}
 
 	public static void write(String filename, int n) {
@@ -18,13 +18,11 @@ public class BufferWriters {
 
 		try (BufferedWriter bf = new BufferedWriter(new FileWriter(file))) {
 
-			
-					
-					bf.write("hkfffds" );
-					bf.newLine();
-				
-				
-			
+			bf.write("hello");
+			bf.newLine();
+			bf.write("hello");
+		
+
 		} catch (IOException e) {
 			System.out.println("cant read the file");
 			e.printStackTrace();

@@ -65,3 +65,36 @@ public class PersonneTest {
 	}
 
 }
+
+
+/*	private static ArrayList<Personne> UnsortedPersonneList() {
+		
+		ArrayList<Personne> list = new ArrayList<>();
+
+		list.add(new Personne("Lokesh", "Gupta"));
+		list.add(new Personne("Alex", "Gussin"));
+		list.add(new Personne("Brian", "Sux"));
+		list.add(new Personne("Neon", "Piper"));
+		list.add(new Personne("David", "Beckham"));
+		list.add(new Personne("Alex", "Beckham"));
+		list.add(new Personne("Brian", "Suxena"));
+		
+		return list;
+	}
+
+	public static void main(String[] args) {
+
+		ArrayList<Personne> test = UnsortedPersonneList();
+
+		Comparator<Personne> compareByName = Comparator
+				.comparing(Personne::getNom)
+				.thenComparing(Personne::getPrenom);
+
+		Collections.sort(test, compareByName);
+
+		System.out.println(test);
+		System.out.println("toto");
+	}
+ * 
+ * 
+ */

@@ -23,29 +23,34 @@ public class MyLinkedNode<T extends Comparable<T>> {
 
 	}
 
-	
-	
 	public void insertLast(T value) {
-
-		/*
-		 * if(current.compareTo(value) > 0) {
-		 * 
-		 * }
-		 */
-
 		Node<T> newNode = new Node<T>(value, null);
-
 		if (head == null) {
 			head = newNode;
-
 		} else {
 			current = head;
 			while (current.getNext() != null) {
-
 				current = current.getNext();
 			}
 			current.setNext(newNode);
 		}
+	}
+
+	public boolean search(T value) {
+		if (head == null) {
+			return false;
+		} else {
+			current = head;
+			while (current.getNext() != null) {
+				if (current.getValue().equals(value)) {
+					System.out.println(value + ": is the list");
+					return true;
+				}
+				current = current.getNext();
+			}
+		}
+		System.out.println(value + ": is NOT the list");
+		return false;
 	}
 
 	public Node<T> deleteFirst() {
@@ -62,14 +67,10 @@ public class MyLinkedNode<T extends Comparable<T>> {
 		String remove = "";
 
 		if ((removed = (String) deleteFirst().getValue()) == null) {
-
 			return "The list is empty ! Amigo";
-
 		} else {
-
 			remove = "[ " + "The headRemoved is : " + removed.toString().toUpperCase() + " ]";
 		}
-
 		return remove;
 	}
 
@@ -92,19 +93,14 @@ public class MyLinkedNode<T extends Comparable<T>> {
 		String remove = "";
 
 		if ((removed = (String) deleteLast().getValue()) == null) {
-
 			return "The list is empty ! Amigo";
-
 		} else {
-
 			remove = "[ " + "The tailRemoved is : " + removed.toString().toUpperCase() + " ]";
 		}
-
 		return remove;
 	}
 
 	public Node<T> deleteAny(T value) {
-
 		if (head == null) {
 			System.err.println("the list is empty !!!");
 			return null;
@@ -128,8 +124,39 @@ public class MyLinkedNode<T extends Comparable<T>> {
 		}
 	}
 
+	/* Given a key, deletes the first occurrence of key in linked list */
+	public void deleteNode1(T value) {
+		// Store head node
+		Node<T> temp = head, prev = null;
+
+		// If head node itself holds the key to be deleted
+		if (temp != null && temp.getValue().equals(value)) {
+			head = temp.getNext(); // Changed head
+			return;
+		}
+
+		// Search for the key to be deleted, keep track of the
+		// previous node as we need to change temp.next
+		while (temp != null && temp.getValue() != value) {
+			while (current != null && current.getNext() != null && current.getNext().getValue().equals(value)) {
+				current.setNext(current.getNext().getNext());
+
+			}
+
+			prev = temp;
+			temp = temp.getNext();
+		}
+
+		// If key was not present in linked list
+		if (temp == null)
+			return;
+
+		// Unlink the node from linked list
+		prev.setNext(temp.getNext());
+	}
+
 	public boolean deleteNode(T value) {
-		 boolean removed = false;
+		boolean removed = false;
 		if (head == null) {
 			System.err.println("the list is empty !!!2");
 			return removed;
@@ -140,7 +167,7 @@ public class MyLinkedNode<T extends Comparable<T>> {
 		}
 
 		Node<T> current = head;
-		while ( current != null && current.getNext() != null) {
+		while (current != null && current.getNext() != null) {
 			while (current != null && current.getNext() != null && current.getNext().getValue().equals(value)) {
 				current.setNext(current.getNext().getNext());
 				removed = true;
@@ -171,6 +198,18 @@ public class MyLinkedNode<T extends Comparable<T>> {
 		}
 	}
 
+	public void add2(T value) {
+
+		Node<T> newNode = new Node<T>(value, null);
+
+		if (head == null) {
+			System.out.println("la liste est vide");
+			head = newNode;
+			return;
+
+		}
+	}
+
 	public void add(T value) {
 		Node<T> nouveau = new Node<T>(value, null);
 
@@ -197,28 +236,26 @@ public class MyLinkedNode<T extends Comparable<T>> {
 
 	@Override
 	public String toString() {
+		StringBuilder toto = new StringBuilder();
 
-		String description;
-
-		description = "\n********************************************\n";
-		description += "\tLa Liste simplement chainée       \n";
-		description += "********************************************\n";
+		toto.append("********************************************\n");
+		toto.append("\tLa Liste simplement chainée       \n");
+		toto.append("********************************************\n");
 		if (head == null) {
-			description += "The list is empty !";
+			toto.append("The list is empty !");
 		} else {
-			
-			
-			for(Node<T> start=head ; start !=null ; start = start.getNext()) {
-				description += "\n" + start.getValue();
+
+			for (Node<T> start = head; start != null; start = start.getNext()) {
+				toto.append("\n" + start.getValue());
 
 			}
 
-			/*while (start != null) {
-				description += "\n" + start.getValue();
-				start = start.getNext();
-			}*/
+			/*
+			 * while (start != null) { description += "\n" + start.getValue(); start =
+			 * start.getNext(); }
+			 */
 		}
-		return description;
+		return toto.toString();
 	}
 
 }

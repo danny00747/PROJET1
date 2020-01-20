@@ -8,9 +8,11 @@ public class ClassB extends Personne {
 	public String[] strg = { "dan", "oli", "niyo" };
 
 	public ClassB(String nom, String prenom) {
-
+		super(nom, prenom);
+		
 		System.out.println(super.getMethod(2, 2, 2));
 		System.out.println(super.getAge());
+		
 
 		this.nom = nom;
 		this.prenom = prenom;

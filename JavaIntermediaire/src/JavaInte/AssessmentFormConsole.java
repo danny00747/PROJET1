@@ -21,11 +21,11 @@ public final class AssessmentFormConsole {
 	 * @post set the main logic of this program
 	 */
 	public static void main(String[] args) throws IOException {
-		
+
 		setQuestions();
 		randomize();
 		setRating();
-		
+
 		if (isValidRating) {
 			evaluate();
 			printResult();
@@ -40,14 +40,13 @@ public final class AssessmentFormConsole {
 	 * @post set the questions in an array
 	 */
 	public static void setQuestions() {
-		String filename = "C:\\Users\\morga\\Documents\\LEARN-JAVA\\JavaIntermediaire\\src\\JavaInte\\QCM.txt";
+		String filename = "C:\\Users\\morga\\Documents\\LEARN-JAVA\\JavaIntermediaire\\src\\JavaInte\\QCM-ECO.txt";
 		AssessmentForm mcq = AssessmentFormLoader.buildQuestionnaire(filename);
-		 questions = mcq.getQuestions();
+		questions = mcq.getQuestions();
 	}
 
-
 	/*
-	 * @ post randomize questions 
+	 * @ post randomize questions
 	 */
 	public static void randomize() {
 		for (int i = questions.length - 1; i > 0; i--) {
@@ -59,7 +58,7 @@ public final class AssessmentFormConsole {
 	}
 
 	/*
-	 * print rating methods and set the rating method asked to the user
+	 * @ post prints rating methods and set the rating method asked to the user
 	 */
 	public static void setRating() {
 		System.out.println("Entrez votre mode de cotation");
@@ -76,7 +75,7 @@ public final class AssessmentFormConsole {
 	}
 
 	/*
-	 * print choices return the entered int
+	 * @ post prints choices return the entered int
 	 */
 	public static int getAnswer(Question q) {
 		System.out.println(q.getWording());
@@ -90,7 +89,7 @@ public final class AssessmentFormConsole {
 	}
 
 	/*
-	 * evaluate results and print the answer
+	 * @ post evaluates results and print the answer
 	 */
 	public static void evaluate() {
 		for (int i = 0; i < questions.length; i++) {
@@ -111,7 +110,7 @@ public final class AssessmentFormConsole {
 	}
 
 	/*
-	 * print results at the end in terms of the chosen rating method
+	 * @ post prints results at the end in terms of the chosen rating method
 	 */
 	public static void printResult() {
 
@@ -146,21 +145,21 @@ public final class AssessmentFormConsole {
 	}
 
 	/*
-	 * print a separator
+	 * @ post prints a separator
 	 */
 	public static void printLine() {
 		System.out.println("***********************");
 	}
 
 	/*
-	 * enum of every rating system
+	 * @ post enum of every rating system
 	 */
 	enum Rating {
 		PERCENTAGE, SCALE, PENALTY, DISTINCTION, ALL
 	}
 
 	/*
-	 * enum of every distinction
+	 * @ post enum of every distinction
 	 */
 	enum Distinction {
 
@@ -173,7 +172,7 @@ public final class AssessmentFormConsole {
 		}
 
 		/*
-		 * return Distinction given the percent
+		 * @ post returns distinction given the percent
 		 */
 		public static Distinction getDistinction(int percent) {
 			for (int i = 0; i < Distinction.values().length; i++) {
@@ -184,7 +183,7 @@ public final class AssessmentFormConsole {
 		}
 
 		/*
-		 * return a friendly name
+		 * @ post return a friendly name
 		 */
 		public String toString() {
 			return this.name().toLowerCase().replace('_', ' ');

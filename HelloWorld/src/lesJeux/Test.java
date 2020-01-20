@@ -2,53 +2,36 @@ package lesJeux;
 
 public class Test {
 
-	public static void main(String[] args) {
-		//System.out.println(contains('s'));
-		//System.out.println(contains1("j"));
-		int n = 8;
+	public static void calcSum_array(int arr[], int n, int m) {
 		int sum = 0;
-		String b = new String ("daniel");
-		String a = new String ("daniel");
-		
-		
-		if ( a.equals(b)) {
-			System.out.println("true-vrai");
-		}else {
-			System.out.println("faux");
+		int sum_array[] = new int[n];
+
+		// calc 1st m/2 + 1 element
+		// for 1st window
+		for (int i = 0; i < m / 2 + 1; i++)
+			sum += arr[i];
+		sum_array[0] = sum;
+
+		// use sliding window to
+		// calculate rest of sum_array
+		for (int i = 1; i < n; i++) {
+			if (i - (m / 2) - 1 >= 0)
+				sum -= arr[i - (m / 2) - 1];
+			if (i + (m / 2) < n)
+				sum += arr[i + (m / 2)];
+			sum_array[i] = sum;
 		}
 
-		for (int i = 1; i <= 10; i++) {
-			if (i % 2 == 0) {
-				sum = sum + i;
-				// System.out.println(sum);
-			}
-			// System.out.println(sum);
-		}
-		// System.out.println(sum);
-
+		// print sum_array
+		for (int i = 0; i < n; i++)
+			System.out.print(sum_array[i] + " ");
 	}
 
-	public static boolean contains(char s) {
-		char[] sb = { 'd', 'a', 'n' };
-		for (int i = 0; i < sb.length; i++) {
-
-			if (s == sb[i]) {
-				return true;
-			}
-		}
-		return false;
-
-	}
-
-	public static boolean contains1(String s1) {
-		String[] string = { "d", "a", "n" };
-		for (int i = 0; i < string.length; i++) {
-
-			if (s1 == string[i]) {
-				return true;
-			}
-		}
-		return false;
-
+	// Driver program
+	public static void main(String[] args) {
+		int arr[] = {2, 3, 0, 4, 9, 0, 3 };
+		int m = 5;
+		int n = arr.length;
+		calcSum_array(arr, n, m);
 	}
 }

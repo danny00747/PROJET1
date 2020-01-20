@@ -7,8 +7,16 @@ public class Interro {
 	public static void main(String[] args) {
 		double[][] m1 = { { 1.0, 2.0 }, { 1.0, 2.0 } };
 		double[][] m2 = { { 1.0, 2.0 }, { 1.0, 2.0 } };
-		System.out.println(identiques(m1, m2));
+		// System.out.println(identiques(m1, m2));
+
+		String s = "";
+		int a = 1000;
+		s = s + a;
+	 
+		System.out.println(s.length());
 	}
+	
+	
 
 	public static boolean identiques(double[][] m1, double[][] m2) {
 		if (m1.length != m2.length || m1[0].length != m2[0].length)
